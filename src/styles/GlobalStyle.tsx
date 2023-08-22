@@ -11,11 +11,20 @@ const globalStyle = (theme: Theme) => css`
     box-sizing: border-box;
     font-family: "Noto Sans KR", sans-serif;
     word-break: keep-all;
+    ::-webkit-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+      display: none; /* Chrome, Safari, Opera*/
+    }
   }
 
   html,
   body {
-    background-color: ${theme.color.white};
-    color: ${theme.color.black};
+    background-color: ${theme.color.warmBlack};
+    color: ${theme.color.white};
+  }
+
+  details > summary {
+    list-style: none;
   }
 `;

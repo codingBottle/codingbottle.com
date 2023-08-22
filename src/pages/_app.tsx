@@ -1,11 +1,20 @@
-import { css } from "@emotion/react";
+import { css, ThemeProvider } from "@emotion/react";
+import Nav from "components/nav";
+import { domMax, LazyMotion } from "framer-motion";
 import type { AppProps } from "next/app";
+import GlobalStyle from "styles/GlobalStyle";
+import theme from "styles/theme/theme";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div css={layout}>
-      <Component {...pageProps} />
-    </div>
+    <ThemeProvider theme={theme}>
+      <LazyMotion features={domMax}>
+        <GlobalStyle />
+     
+        <Nav />
+        <Component {...pageProps} />
+      </LazyMotion>
+    </ThemeProvider>
   );
 }
 
@@ -15,4 +24,5 @@ const layout = css`
   width: 100%;
   height: 100vh;
   margin: 0 auto;
+  background-color: ${theme.color.warmBlack};
 `;
