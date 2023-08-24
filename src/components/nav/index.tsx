@@ -23,6 +23,7 @@ export default function Nav() {
               textDecoration: "none",
               color: "white",
             }}
+            passHref
           >
             <span css={navItem}>{item.name}</span>
           </Link>
@@ -35,22 +36,26 @@ export default function Nav() {
 const navCss = css`
   position: sticky;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   width: 100%;
-  padding: 2rem 0;
+  padding: 2rem;
+
+  @media (max-width: 380px) {
+    padding: 1rem 0.9rem;
+  }
 `;
 
-const navLogo = css`
-  padding-left: 2rem;
-`;
+const navLogo = css``;
 
 const navList = css`
-  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 1rem;
 `;
 
 const navItem = css`
-  margin: 0 1rem;
-  font-size: 0.97rem;
+  font-size: 0.9rem;
   font-weight: ${theme.fontWeight.light};
 `;
