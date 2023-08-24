@@ -37,6 +37,10 @@ const titleCss = css`
   text-align: center;
   font-size: 2.2rem;
   font-weight: ${theme.fontWeight.semiBold};
+  
+  @media (max-width: 380px) {
+    font-size: 1.8rem;
+  }
 `;
 
 const subTitleCss = css`

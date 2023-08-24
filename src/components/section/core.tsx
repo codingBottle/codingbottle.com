@@ -161,6 +161,7 @@ const contentCss = css`
   max-width: 13rem;
   text-align: right;
   margin: 0.5rem 0;
+  color: ${theme.color.text};
 `;
 
 const contentWrapper = css`
@@ -171,7 +172,7 @@ const contentWrapper = css`
   align-items: center;
 
   @media (max-width: 380px) {
-    padding: 1rem 0.2rem;
+    padding: 1rem 0.99rem;
   }
 `;
 

@@ -1,4 +1,3 @@
-import { GA_TRACKING_ID } from "libs/gtag";
 import { Head, Html, Main, NextScript } from "next/document";
 
 export default function Document() {
@@ -13,7 +12,7 @@ export default function Document() {
         <meta property="og:locale" content="ko_KR" />
         <script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLEANALYTICS_KEY}`}
         />
         <script
           dangerouslySetInnerHTML={{
@@ -21,7 +20,7 @@ export default function Document() {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
           
-            gtag('config', '${GA_TRACKING_ID}');`,
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLEANALYTICS_KEY}');`,
           }}
         />
 
