@@ -45,7 +45,7 @@ export default function About() {
 }
 
 const wrapper = css`
-  height: 320rem;
+  height: 300rem;
   width: 100%;
   margin-bottom: 20rem;
 `;
