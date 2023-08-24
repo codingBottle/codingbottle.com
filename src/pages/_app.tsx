@@ -3,7 +3,7 @@
 import { css, ThemeProvider } from "@emotion/react";
 import Nav from "components/nav";
 import { domMax, LazyMotion } from "framer-motion";
-import useWindowSize from "hook/useWindowSize";
+import useWindowSize from "hooks/useWindowSize";
 import type { AppProps } from "next/app";
 import { PropsWithChildren, useEffect } from "react";
 import GlobalStyle from "styles/GlobalStyle";

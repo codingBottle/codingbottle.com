@@ -1,4 +1,17 @@
+/** @jsxImportSource @emotion/react */
+
+import { css } from "@emotion/react";
+import Footer from "components/footer";
+import About from "components/section/about";
+import Contect from "components/section/contect";
+import Core from "components/section/core";
+import Faq from "components/section/faq";
+import Intro from "components/section/intro";
+import Schedule from "components/section/schedule";
+import Team from "components/section/team";
+import Number from "components/text/number";
 import Head from "next/head";
+import theme from "styles/theme/theme";
 
 export default function Home() {
   return (
@@ -13,7 +26,43 @@ export default function Home() {
         {/* <meta property="og:image" content="image" /> */}
         <meta property="og:url" content="codingBottle.com" />
       </Head>
-      <main></main>
+      <main css={wrapper}>
+        <Intro />
+        <div id="about">
+          <Number num="1" title="Introduce" />
+          <About />
+        </div>
+        <div id="team">
+          <Number num="2" title="Team composition" />
+          <Team />
+        </div>
+        <div id="recruit">
+          <Number num="3" title="Recruitment schedule" />
+          <Schedule />
+        </div>
+        <div id="faq">
+          <Number num="4" title="FAQ" />
+          <Faq />
+        </div>
+        <div id="core">
+          <Number num="5" title="Sailors" />
+          <Core />
+        </div>
+        <div id="contect">
+          <Contect />
+        </div>
+        <Footer />
+      </main>
     </>
   );
 }
+
+const wrapper = css`
+  overflow-y: scroll;
+  height: calc(var(--var, 1vh) * 100);
+  width: 100vw;
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: ${theme.color.warmBlack};
+`;
+
