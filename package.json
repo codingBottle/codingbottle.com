@@ -37,5 +37,10 @@
     "@storybook/testing-library": "^0.2.0",
     "@types/react-lottie": "^1.2.6",
     "eslint-plugin-storybook": "^0.6.13"
+  },
+  "overrides": {
+    "react-lottie": {
+      "react": "^0.14.7 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0"
+    }
   }
 }
