@@ -17,8 +17,8 @@ export default function Footer() {
 }
 
 const wrapper = css`
-  height: 8rem;
-  background-color: ${theme.color.warmBlack};
+  height: 10rem;
+  background-color: #323131;
 `;
 
 const inWrapper = css`

@@ -11,7 +11,7 @@ const globalStyle = (theme: Theme) => css`
     box-sizing: border-box;
     font-family: "Noto Sans KR", sans-serif;
     word-break: keep-all;
-    
+
     ::-webkit-scrollbar {
       -ms-overflow-style: none; /* IE and Edge */
       scrollbar-width: none; /* Firefox */
@@ -27,5 +27,9 @@ const globalStyle = (theme: Theme) => css`
 
   details > summary {
     list-style: none;
+  }
+  
+  details > summary::-webkit-details-marker {
+    display: none;
   }
 `;
