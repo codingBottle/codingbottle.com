@@ -3,18 +3,23 @@
 import { css } from "@emotion/react";
 import personBoat from "assets/lottieJSON/personBoat.json";
 import LottieWrapper from "components/lottieWrapper";
+import Number from "components/text/number";
 import Point from "components/text/point";
 import SectionAbout from "components/text/sectionAbout";
+import theme from "styles/theme/theme";
 
 export default function About() {
   return (
     <section css={wrapper}>
       <div css={itemWrapper}>
-        <SectionAbout
-          title="What is codingBottle?"
-          subTitle="더 멀리 항해하자, 코딩보틀!"
-        />
-        <div>
+        <div css={zIndexWrapper}>
+          <Number num="1" title="Introduce" />
+          <SectionAbout
+            title="What is codingBottle?"
+            subTitle="더 멀리 항해하자, 코딩보틀!"
+          />
+        </div>
+        <div css={lottieWrapper}>
           <LottieWrapper lottieData={personBoat} />
         </div>
       </div>
@@ -22,6 +27,7 @@ export default function About() {
         title="6개월 동안 진행!"
         content="🎓 24년 졸업 예정자도 문제 없어요"
       />
+
       <div css={rightWrapper}>
         <Point
           title="멋진 사람들과 함께"
@@ -45,18 +51,14 @@ export default function About() {
 }
 
 const wrapper = css`
-  height: 300rem;
+  height: 240rem;
   width: 100%;
   margin-bottom: 20rem;
 `;
 
 const itemWrapper = css`
   position: sticky;
-  top: 40px;
-
-  @media (max-width: 380px) {
-    top: 35px;
-  }
+  top: 0px;
 `;
 
 const rightWrapper = css`
@@ -66,4 +68,18 @@ const rightWrapper = css`
 
 const marginWrapper = css`
   margin-top: 80rem;
+`;
+
+const zIndexWrapper = css`
+  position: relative;
+  background-color: ${theme.color.warmBlack};
+`;
+
+const fadeUpContent = css`
+  position: relative;
+  z-index: 2;
+`;
+
+const lottieWrapper = css`
+  z-index: 0;
 `;

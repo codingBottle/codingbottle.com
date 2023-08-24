@@ -28,10 +28,7 @@ export default function Home() {
       </Head>
       <main css={wrapper}>
         <Intro />
-        <div id="about">
-          <Number num="1" title="Introduce" />
-          <About />
-        </div>
+        <About />
         <div id="team">
           <Number num="2" title="Team composition" />
           <Team />
@@ -65,4 +62,3 @@ const wrapper = css`
   margin: 0 auto;
   background-color: ${theme.color.warmBlack};
 `;
-

@@ -26,7 +26,6 @@ export default function App({ Component, pageProps }: AppProps) {
               </h1>
             </Link>
           </nav>
-
           <Component {...pageProps} />
         </Layout>
       </LazyMotion>
@@ -58,7 +57,7 @@ const navCss = css`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
 
   @media (max-width: 380px) {
     padding: 1rem 0.9rem;

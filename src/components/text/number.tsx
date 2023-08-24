@@ -21,7 +21,7 @@ const wrapper = css`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 1.4rem;
+  margin: 0 1.4rem;
   font-weight: ${theme.fontWeight.bold};
   font-size: 0.9rem;
   color: #5074ed;

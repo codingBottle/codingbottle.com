@@ -1,8 +1,6 @@
 /** @jsxImportSource @emotion/react */
 
 import { css } from "@emotion/react";
-import { defaultFadeInUpVariants } from "constants/motion";
-import { m } from "framer-motion";
 import theme from "styles/theme/theme";
 
 interface Props {
@@ -12,16 +10,10 @@ interface Props {
 
 export default function Point({ title, content }: Props) {
   return (
-    <m.div
-      css={wrapper}
-      variants={defaultFadeInUpVariants}
-      initial="hidden"
-      whileInView="animate"
-      animate="animate"
-    >
+    <div css={wrapper}>
       <span css={titleCss}>{title}</span>
       <span css={contentCss}>{content}.</span>
-    </m.div>
+    </div>
   );
 }
 
@@ -34,9 +26,7 @@ const wrapper = css`
 const titleCss = css`
   font-size: 1.6rem;
   font-weight: ${theme.fontWeight.semiBold};
-  color: #f0faff;
   letter-spacing: 0.4px;
-  opacity: 0.9;
 `;
 
 const contentCss = css`
@@ -44,5 +34,4 @@ const contentCss = css`
   font-weight: ${theme.fontWeight.normal};
   margin-top: 1rem;
   letter-spacing: 0.3px;
-  opacity: 0.85;
 `;
