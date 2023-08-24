@@ -23,11 +23,13 @@ export default function About() {
           <LottieWrapper lottieData={personBoat} />
         </div>
       </div>
-      <Point
-        title="6개월 동안 진행!"
-        content="🎓 24년 졸업 예정자도 문제 없어요"
-      />
-
+      <Point title="" content="🌊 파도를 헤쳐 글씨를 찾아보세요!" />
+      <div css={marginWrapper}>
+        <Point
+          title="5개월 동안 진행!"
+          content="🎓 24년 졸업 예정자도 문제 없어요"
+        />
+      </div>
       <div css={rightWrapper}>
         <Point
           title="멋진 사람들과 함께"
@@ -51,7 +53,7 @@ export default function About() {
 }
 
 const wrapper = css`
-  height: 240rem;
+  height: 300rem;
   width: 100%;
   margin-bottom: 20rem;
 `;

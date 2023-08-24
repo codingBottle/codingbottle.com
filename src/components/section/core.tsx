@@ -4,7 +4,12 @@ import { css } from "@emotion/react";
 import fish from "assets/lottieJSON/fish.json";
 import LottieWrapper from "components/lottieWrapper";
 import SectionAbout from "components/text/sectionAbout";
-import { MOBILE_CORE, SERVER_CORE, WEB_CORE } from "constants/core";
+import {
+  DESIGN_CORE,
+  MOBILE_CORE,
+  SERVER_CORE,
+  WEB_CORE,
+} from "constants/core";
 import {
   defaultFadeInUpVariants,
   defaultFadeInVariants,
@@ -22,7 +27,7 @@ export default function Core() {
         </div>
       </div>
 
-      <div css={wrapper}>
+      <div>
         <div css={contentWrapper}>
           <m.span
             css={titleCss}
@@ -33,22 +38,23 @@ export default function Core() {
           >
             WEB
           </m.span>
-
-          {WEB_CORE.map((item, index) => (
-            <m.span
-              key={index}
-              css={contentCss}
-              variants={defaultFadeInVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-            >
-              {item}
-            </m.span>
-          ))}
+          <div css={coreContentWrapper}>
+            {WEB_CORE.map((item, index) => (
+              <m.span
+                key={index}
+                css={contentCss}
+                variants={defaultFadeInVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+              >
+                {item}
+              </m.span>
+            ))}
+          </div>
         </div>
+
         <div css={contentWrapper}>
-          {" "}
           <m.span
             css={titleCss}
             variants={defaultFadeInUpVariants}
@@ -58,18 +64,25 @@ export default function Core() {
           >
             SERVER
           </m.span>
-          {SERVER_CORE.map((item, index) => (
-            <m.span
-              key={index}
-              css={contentCss}
-              variants={defaultFadeInVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-            >
-              {item}
-            </m.span>
-          ))}
+          <div css={coreContentWrapper}>
+            {SERVER_CORE.map((item, index) => (
+              <m.span
+                key={index}
+                css={contentCss}
+                variants={defaultFadeInVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+              >
+                {item}
+              </m.span>
+            ))}
+          </div>
+        </div>
+        <div css={lottieWrapper}>
+          <div css={lottieInWrapper}>
+            <LottieWrapper lottieData={fish} />
+          </div>
         </div>
         <div css={contentWrapper}>
           <m.span
@@ -81,31 +94,51 @@ export default function Core() {
           >
             MOBILE
           </m.span>
+          <div css={coreContentWrapper}>
+            {MOBILE_CORE.map((item, index) => (
+              <m.span
+                key={index}
+                css={contentCss}
+                variants={defaultFadeInVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+              >
+                {item}
+              </m.span>
+            ))}
+          </div>
+        </div>
 
-          {MOBILE_CORE.map((item, index) => (
-            <m.span
-              key={index}
-              css={contentCss}
-              variants={defaultFadeInVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-            >
-              {item}
-            </m.span>
-          ))}
+        <div css={contentWrapper}>
+          <m.span
+            css={titleCss}
+            variants={defaultFadeInUpVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+          >
+            DESIGN
+          </m.span>
+          <div css={coreContentWrapper}>
+            {DESIGN_CORE.map((item, index) => (
+              <m.span
+                key={index}
+                css={contentCss}
+                variants={defaultFadeInVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+              >
+                {item}
+              </m.span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
   );
 }
-
-const wrapper = css`
-  padding: 1rem 3.5rem;
-  @media (max-width: 380px) {
-    padding: 1rem 0.9rem;
-  }
-`;
 
 const lottieWrapper = css`
   position: relative;
@@ -127,10 +160,22 @@ const contentCss = css`
   font-weight: ${theme.fontWeight.light};
   max-width: 13rem;
   text-align: right;
+  margin: 0.5rem 0;
 `;
 
 const contentWrapper = css`
-  min-height: 7rem;
+  padding: 1rem 1.2rem;
+  min-height: 9rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 380px) {
+    padding: 1rem 0.2rem;
+  }
+`;
+
+const coreContentWrapper = css`
+  display: flex;
+  flex-direction: column;
 `;
