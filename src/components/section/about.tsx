@@ -19,9 +19,7 @@ export default function About() {
             subTitle="더 멀리 항해하자, 코딩보틀!"
           />
         </div>
-        <div css={lottieWrapper}>
-          <LottieWrapper lottieData={personBoat} />
-        </div>
+        <LottieWrapper lottieData={personBoat} />
       </div>
       <Point title="" content="🌊 파도를 헤쳐 글씨를 찾아보세요" />
       <div css={marginWrapper}>
@@ -53,7 +51,7 @@ export default function About() {
 }
 
 const wrapper = css`
-  height: 300rem;
+  height: 325rem;
   width: 100%;
   margin-bottom: 20rem;
 `;
@@ -61,27 +59,19 @@ const wrapper = css`
 const itemWrapper = css`
   position: sticky;
   top: 0px;
+  z-index: 10000;
 `;
 
 const rightWrapper = css`
-  float: right;
-  margin-top: 45rem;
+  text-align: right;
+  margin-top: 42rem;
 `;
 
 const marginWrapper = css`
-  margin-top: 80rem;
+  margin-top: 68rem;
 `;
 
 const zIndexWrapper = css`
   position: relative;
   background-color: ${theme.color.warmBlack};
-`;
-
-const fadeUpContent = css`
-  position: relative;
-  z-index: 2;
-`;
-
-const lottieWrapper = css`
-  z-index: 0;
 `;
