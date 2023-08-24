@@ -11,19 +11,29 @@ export const faq = [
     answer: "23년 9월부터 24년 2월까지 활동해요.",
   },
   { id: 2, question: "동아리 정기 모임은 언제인가요?", answer: "" },
-  { id: 3, question: "왜 “코딩보틀”인가요?", answer: "" },
-  { id: 4, question: "“코딩보틀”만의 매력이 뭔 지 궁금해요", answer: "" },
+  {
+    id: 3,
+    question: "왜 “코딩보틀”인가요?",
+    answer:
+      "빠니보틀에서 영감을 받아 여행하며 코딩하는 낭만이라는 배를 탄 동아리를 추구하고자 합니다.",
+  },
+  {
+    id: 4,
+    question: "“코딩보틀”만의 매력이 뭔 지 궁금해요",
+    answer:
+      "쉽게 찾기 어려운 디자인 파트와의 협업을 진행한다는 점과, 같은 직군의 개발자분들과의 만남 그리고 타 직군과의 협업으로 한 학기 동안 진행하는 대형 프로젝트를 경험할 수 있어요.",
+  },
   {
     id: 5,
     question: "문의할 사항이 있어요",
     answer:
-      "추가적으로 문의하실 사항이 있다면 아래 적힌 메일 혹은 인스타그램으로 연락주세요. Email : codingbottleskhu@gmail.com, Instagram : @codingbottle",
+      "추가적으로 문의하실 사항이 있다면 하단의 채널톡 혹은 아래 적힌 메일 혹은 인스타그램으로 연락주세요. Email : codingbottleskhu@gmail.com, Instagram : @codingbottle",
   },
   {
     id: 6,
     question: "중복지원이 가능한가요?",
     answer:
-      "직군간 중복 지원은 불가능해요. 중복 지원자의 경우 지원 내역 모두 무효 처리될 예정입니다.",
+      "직군 간 중복 지원은 불가능해요. 중복 지원자의 경우 지원 내역 모두 무효 처리될 예정입니다.",
   },
   {
     id: 7,

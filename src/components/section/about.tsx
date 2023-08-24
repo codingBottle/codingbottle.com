@@ -23,7 +23,7 @@ export default function About() {
           <LottieWrapper lottieData={personBoat} />
         </div>
       </div>
-      <Point title="" content="🌊 파도를 헤쳐 글씨를 찾아보세요!" />
+      <Point title="" content="🌊 파도를 헤쳐 글씨를 찾아보세요" />
       <div css={marginWrapper}>
         <Point
           title="5개월 동안 진행!"

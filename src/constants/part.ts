@@ -29,7 +29,7 @@ export const MOBILE_TODO = [
   "모바일 개발 혹은 새로 나오는 기술들에 대한 이야기를 나눌 수 있어요. (WWDC 같이보기 등)",
 ];
 export const MOBILE_ONEWORD =
-  "WEB파트에서 개발 역량과 문제 해결 능력을 바탕으로 함께 성장해요 ~~!";
+  "사용자의 편의를 품은 완벽한 앱을 함께 만들어보아요!";
 export const MOBILE_NOTION = "https://url.kr/hz7rpt";
 
 // 디자인
@@ -39,6 +39,5 @@ export const DESIGN_TODO = [
   "구글, 애플, IBM 디자인 시스템에 대해서 같이 공부하고 이야기합니다.",
   "사용자 만족 경험을 극대화 시킨 디자인을 만들어 냅니다.",
 ];
-export const DESIGN_ONEWORD =
-  "WEB파트에서 개발 역량과 문제 해결 능력을 바탕으로 함께 성장해요 ~~!";
-export const DESIGN_NOTION = "https://forms.gle/jrhmxjXZKKAndoVC8";
+export const DESIGN_ONEWORD = "사용성이 좋은 디자인을 만들자!!";
+export const DESIGN_NOTION = "https://url.kr/6ujmyz";
