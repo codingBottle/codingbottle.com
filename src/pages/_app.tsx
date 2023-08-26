@@ -1,14 +1,15 @@
 /** @jsxImportSource @emotion/react */
 
 import { css, ThemeProvider } from "@emotion/react";
+import logo from "assets/images/logo.png";
 import { domMax, LazyMotion } from "framer-motion";
 import useWindowSize from "hooks/useWindowSize";
 import type { AppProps } from "next/app";
+import Image from "next/image";
 import Link from "next/link";
 import { PropsWithChildren, useEffect } from "react";
 import GlobalStyle from "styles/GlobalStyle";
 import theme from "styles/theme/theme";
-
 let vh = 0;
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -17,13 +18,9 @@ export default function App({ Component, pageProps }: AppProps) {
       <LazyMotion features={domMax}>
         <GlobalStyle />
         <Layout>
-          {/* <Nav /> */}
           <nav css={navCss}>
             <Link href="/">
-              <h1>
-                로고
-                {/* <Image src="" alt="logo" /> */}
-              </h1>
+              <Image src={logo} alt="logo" width={50} height={50} />
             </Link>
           </nav>
           <Component {...pageProps} />
@@ -57,7 +54,7 @@ const navCss = css`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem;
 
   @media (max-width: 380px) {
     padding: 1rem 0.9rem;

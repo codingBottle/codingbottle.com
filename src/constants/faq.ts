@@ -10,12 +10,17 @@ export const faq = [
     question: "활동 기간이 어떻게 되나요?",
     answer: "23년 9월부터 24년 2월까지 활동해요.",
   },
-  { id: 2, question: "동아리 정기 모임은 언제인가요?", answer: "" },
+  {
+    id: 2,
+    question: "동아리 정기 모임은 언제인가요?",
+    answer:
+      "정기 모임은 매달 마지막 주 목요일 18시이며 파트별 일정은 후에 정해질 예정입니다. 9월 정기 모임은 9/21입니다.",
+  },
   {
     id: 3,
     question: "왜 “코딩보틀”인가요?",
     answer:
-      "빠니보틀에서 영감을 받아 여행하며 코딩하는 낭만이라는 배를 탄 동아리를 추구하고자 합니다.",
+      "빠니보틀에서 영감을 받아 여행하며 코딩하는 낭만 동아리를 추구하고자 합니다.",
   },
   {
     id: 4,
@@ -27,7 +32,7 @@ export const faq = [
     id: 5,
     question: "문의할 사항이 있어요",
     answer:
-      "추가적으로 문의하실 사항이 있다면 하단의 채널톡 혹은 아래 적힌 메일 혹은 인스타그램으로 연락주세요. Email : codingbottleskhu@gmail.com, Instagram : @codingbottle",
+      "추가적으로 문의하실 사항이 있다면 하단의 채널톡으로 문의가 가능합니다. 혹은 아래 적힌 메일이나 인스타그램으로 연락주세요. Email : codingbottleskhu@gmail.com, Instagram : @codingbottle",
   },
   {
     id: 6,
