@@ -49,7 +49,7 @@ export default function EachTeam({
         </div>
         <div css={btnCss}>
           <Link
-            href="https://forms.gle/jrhmxjXZKKAndoVC8"
+            href="https://forms.gle/yTLb6bqLFtC8FDyE6"
             style={{
               textDecoration: "none",
               color: "white",
