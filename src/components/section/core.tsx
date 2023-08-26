@@ -20,7 +20,7 @@ import theme from "styles/theme/theme";
 export default function Core() {
   return (
     <section>
-      <SectionAbout title="Core" subTitle="부끄러움이 많아서리" />
+      <SectionAbout title="항해자" subTitle="부끄러움이 많아서리" />
       <div css={lottieWrapper}>
         <div css={lottieInWrapper}>
           <LottieWrapper lottieData={fish} />
